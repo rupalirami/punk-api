@@ -1,17 +1,16 @@
 import "./SearchBox.scss";
 
 const SearchBox = (props) => {
-  const { label, searchTerm, handleInput } = props;
+  const { searchTerm, handleInput } = props;
 
   return (
     <form className="search-box">
-      <label htmlFor={label} className="search-box__label"></label>
+
       <input
         type="text"
-        name={label}
         value={searchTerm}
         onInput={handleInput}
-        placeholder="Search..."
+        placeholder="Search beer name..."
         className="search-box__input"
       />
     </form>

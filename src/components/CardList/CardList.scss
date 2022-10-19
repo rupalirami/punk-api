@@ -1,39 +1,16 @@
 @use "../../assets/sass/_variables.scss" as *;
 
 .beer-list {
-    width: 100%;
+    width: 75%;
     height: 90%;
     gap: 15px;
-    margin: 15px;;
+    margin: 15px;
     // padding: 35px;
     flex: 1;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
     overflow-x: auto;
-    &__details {
-        width: 20vw;
-        height: auto;
-        border: 2px solid $color-black;
-        .beer-name {
-            font-size: 20px;
-        }
-        .beer-description {
-            font-size: 12px;
-        }
-        .beer-img {
-            display: absolute;
-            width: auto;
-            height: 100px;
-            margin: 10px 20px;
-            margin-left: 0;
-            flex: auto;
-            flex-shrink: 0;
-            border-radius: 15px;
-            box-shadow: 0px 10px 20px rgba($color-black, 0.25);
-        }
-        
-    }
 }
 
 

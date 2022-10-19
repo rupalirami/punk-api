@@ -2,20 +2,9 @@
 
 .App {
   text-align: center;
-  .Homepage {
+  .Mainpage {
     display: flex;
-    .Navbar {
-      text-align: center;
-      width: 30vw;
-      height: 90vh;
-      border: 2px solid $color-black;
-    }
-    .Mainpage {
-      text-align: center;
-      width: 70vw;
-      height: 90vh;
-      border: 2px solid $color-black;
-    }
+    flex-direction: column;
   }
 }
 

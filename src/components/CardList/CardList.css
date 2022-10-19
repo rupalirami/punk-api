@@ -1,5 +1,5 @@
 .beer-list {
-  width: 100%;
+  width: 75%;
   height: 90%;
   gap: 15px;
   margin: 15px;
@@ -8,26 +8,4 @@
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: auto;
   overflow-x: auto;
-}
-.beer-list__details {
-  width: 20vw;
-  height: auto;
-  border: 2px solid #2d3436;
-}
-.beer-list__details .beer-name {
-  font-size: 20px;
-}
-.beer-list__details .beer-description {
-  font-size: 12px;
-}
-.beer-list__details .beer-img {
-  display: absolute;
-  width: auto;
-  height: 100px;
-  margin: 10px 20px;
-  margin-left: 0;
-  flex: auto;
-  flex-shrink: 0;
-  border-radius: 15px;
-  box-shadow: 0px 10px 20px rgba(45, 52, 54, 0.25);
 }/*# sourceMappingURL=CardList.css.map */
