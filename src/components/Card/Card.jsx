@@ -9,6 +9,7 @@ const Card = (props) => {
             className="beer-image"
             src={beer_image}
             alt={beer_name}
+            // style={{background-color: transparent}}
         />
         <h2 className="beer-name">{beer_name}</h2>
         <div className="beer-tagline">{beer_tagline}</div>

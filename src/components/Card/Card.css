@@ -11,6 +11,7 @@
 }
 .beer-details .beer-image {
   display: absolute;
+  opacity: 1;
   width: auto;
   height: 150px;
   margin: 10px;
