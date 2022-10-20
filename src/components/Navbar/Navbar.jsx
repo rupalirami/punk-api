@@ -1,19 +1,12 @@
 import React from 'react'
 import { useState } from "react";
+import FiltersList from '../FiltersList/FiltersList';
 import SearchBox from '../SearchBox/SearchBox'
 import './Navbar.scss'
 
 const Navbar = (props) => {
-    const { searchTerm, handleInput } = props;
-
-    // const filteredBeers = beersArr.filter((beer) => {
-    //     const beerNameLower = beer.name.toLowerCase();
-
-    //     return beerNameLower.includes(searchTerm);
-    // });
-    // const handleABVChecked = (event) => {
-    //     setChecked = !checked
-    // }
+    const { searchTerm, handleInput, filtersArr, toggleCheckedFilter } = props;
+console.log(filtersArr);
 
     return (
 
@@ -22,32 +15,7 @@ const Navbar = (props) => {
                 searchTerm={searchTerm}
                 handleInput={handleInput}
             />
-            {/* <div className='Checkbox'>
-                <label>
-                    <input 
-                        type="checkbox" 
-                        checked="checked"
-                        // onChange={handleChange}
-                    />
-                    {"High ABV (> 6.0%)"}
-                </label>
-                <label>
-                    <input 
-                        type="checkbox" 
-                        checked="checked"
-                        // onChange={handleChange}
-                    />
-                    {"Classic Range"}
-                </label>
-                <label>
-                    <input 
-                        type="checkbox" 
-                        checked="checked"
-                        // onChange={handleChange}
-                    />
-                    {"Acidic (ph < 4)"}
-                </label>
-            </div> */}
+            <FiltersList filtersArr={filtersArr} onChange={toggleCheckedFilter}/>
         </div>
 
     )
