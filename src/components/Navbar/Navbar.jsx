@@ -6,7 +6,7 @@ import './Navbar.scss'
 
 const Navbar = (props) => {
     const { searchTerm, handleInput, filtersArr, toggleChecked } = props;
-console.log("filtersArr=",filtersArr);
+// console.log("filtersArr=",filtersArr);
 
     return (
 

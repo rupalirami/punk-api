@@ -3,7 +3,7 @@ import './Filter.scss'
 
 const Filter = (props) => {
     const { label, value, toggleChecked, filterId } = props;
-    console.log("filterID in Filter=",filterId)
+    // console.log("filterID in Filter=",filterId)
 
   return (
     <label className="filter-checkbox">

@@ -14,7 +14,7 @@ const FiltersList = (props) => {
             filterId={filter.id}
         />
     ));
-    console.log("filtersjsx=",filtersJSX);
+    // console.log("filtersjsx=",filtersJSX);
     return (
         <div className="filter-list">{filtersJSX}</div>
     );

@@ -5,11 +5,6 @@
   width: 95vw;
   height: 90vh;
 }
-.Homepage p {
-  font-size: x-small;
-  color: #213e70;
-  text-align: left;
-}
 @media screen and (max-width: 500px) {
   .Homepage {
     display: flex;
