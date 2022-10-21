@@ -1,22 +1,55 @@
 .beer-details {
-  width: 20vw;
+  width: auto;
   height: auto;
-  border: 2px solid #2d3436;
+  border-radius: 20px;
+  box-shadow: 10px 10px 20px rgba(45, 52, 54, 0.25);
+  background-color: #f6f4eb;
+  margin: 10px;
+  padding: 10px;
 }
 .beer-details .beer-name {
   font-size: 20px;
+  margin: 0 0 15px 0;
+  color: #213e70;
 }
 .beer-details .beer-description {
-  font-size: 12px;
+  font-size: 15px;
+  color: #3c096c;
+  font-weight: 450;
+  min-height: 30%;
+  padding-bottom: 20px;
 }
 .beer-details .beer-image {
   display: absolute;
-  opacity: 1;
   width: auto;
   height: 150px;
   margin: 10px;
   flex: auto;
   flex-shrink: 0;
   border-radius: 15px;
-  box-shadow: 0px 10px 20px rgba(45, 52, 54, 0.25);
+  box-shadow: 0px 0px 17px rgba(45, 52, 54, 0.25);
+  background-color: #e9e7e0;
+}
+.beer-details .beer-filters {
+  display: flex;
+  margin: 0px;
+  width: 100%;
+  justify-content: center;
+  color: #213e70;
+  font-weight: 440;
+  font-size: 12px;
+}
+.beer-details .beer-filters .beer-abv {
+  padding-right: 5px;
+}
+.beer-details .beer-filters .beer-first-brewed {
+  padding-right: 5px;
+}
+@media screen and (max-width: 500px) {
+  .beer-details {
+    margin: 10px;
+    padding-top: 10px;
+    width: 80vw;
+    height: auto;
+  }
 }/*# sourceMappingURL=Card.css.map */

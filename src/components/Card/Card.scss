@@ -1,26 +1,63 @@
 @use "../../assets/sass/_variables.scss" as *;
 
 .beer-details {
-    width: 20vw;
+    width: auto;
     height: auto;
-    border: 2px solid $color-black;
+    // border: 2px solid $color-black;
+    // background-color: rgb(230,230,230);
+    // background-color: hsl(0, 0%, 88%);
+    // box-shadow: 0px 0px 17px rgba($color-black, 0.25);
+    // background-image: url("../../assets/images/jonas-jacobsson-p2KA3Q2lfSw-unsplash.jpg");
+    border-radius: 20px;
+    box-shadow: 10px 10px 20px rgba($color-black, 0.25);
+    background-color: $color-background;
+    margin:10px;
+    padding: 10px;
     .beer-name {
         font-size: 20px;
+        margin: 0 0 15px 0;
+        color: $color_primary;
     }
     .beer-description {
-        font-size: 12px;
+        font-size: 15px;
+        color: $color_secondary;
+        font-weight: 450;
+        min-height: 30%;
+        padding-bottom: 20px;
     }
     .beer-image {
         display: absolute;
-        opacity: 1;
         width: auto;
         height: 150px;
         margin: 10px;
         flex: auto;
         flex-shrink: 0;
         border-radius: 15px;
-        box-shadow: 0px 10px 20px rgba($color-black, 0.25);
+        box-shadow: 0px 0px 17px rgba($color-black, 0.25);
+        // background-color: hsl(0, 0%, 81%);
+        background-color: $color-imagebackground;
     }
-    
+    .beer-filters {
+        display: flex;
+        margin: 0px;
+        width: 100%;
+        justify-content: center;
+        color: $color-primary;
+        font-weight: 440;
+        font-size: 12px;
+
+        .beer-abv {
+            padding-right:5px;
+        }
+        .beer-first-brewed {
+            padding-right: 5px;
+        }
+    }
+    @media screen and (max-width: 500px) {
+        margin: 10px;
+        padding-top: 10px;
+        width: 80vw;
+        height: auto;
+    }
 }
 

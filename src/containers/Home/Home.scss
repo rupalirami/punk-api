@@ -7,4 +7,55 @@
     width: 95vw;
     height: 90vh;
     // border: 2px solid $color-black;
+    // background: linear-gradient(#2B3A48 0%, transparent 0%), linear-gradient(135deg, #272220 33.33%, transparent 33.33%) 0 0%, #272220 linear-gradient(45deg, #272220 33.33%, #2B3A48 33.33%) 0 0%;
+    // background: -webkit-linear-gradient(#2B3A48 0%, transparent 0%), -webkit-linear-gradient(135deg, #272220 33.33%, transparent 33.33%) 0 0%, #272220 -webkit-linear-gradient(45deg, #272220 33.33%, #2B3A48 33.33%) 0 0%;
+    // background: -o-linear-gradient(#2B3A48 0%, transparent 0%), -o-linear-gradient(135deg, #272220 33.33%, transparent 33.33%) 0 0%, #272220 -o-linear-gradient(45deg, #272220 33.33%, #2B3A48 33.33%) 0 0%;
+    // background: -moz-linear-gradient(#2B3A48 0%, transparent 0%), -moz-linear-gradient(135deg, #272220 33.33%, transparent 33.33%) 0 0%, #272220 -moz-linear-gradient(45deg, #272220 33.33%, #2B3A48 33.33%) 0 0%;
+    // background-repeat: repeat-x;
+    p {
+        font-size: x-small;
+        color: $color-primary;
+        text-align: left;
+    }
+
+    @media screen and (max-width: 500px) {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding-top: 10px;
+        height: auto;
+    }
 }
+// .Homepage:after {
+//     // content: "";
+//     display: flex;
+//     flex-direction: row;
+//     text-align: center;
+//     // position: relative;
+//     top: 0;
+//     left: 0;
+//     width: 200px;
+//     height: 200px;
+//     background: linear-gradient(#2B3A48 0%, transparent 0%), linear-gradient(135deg, #272220 33.33%, transparent 33.33%) 0 0%, #272220 linear-gradient(45deg, #272220 33.33%, #2B3A48 33.33%) 0 0%;
+//     background: -webkit-linear-gradient(#2B3A48 0%, transparent 0%), -webkit-linear-gradient(135deg, #272220 33.33%, transparent 33.33%) 0 0%, #272220 -webkit-linear-gradient(45deg, #272220 33.33%, #2B3A48 33.33%) 0 0%;
+//     background: -o-linear-gradient(#2B3A48 0%, transparent 0%), -o-linear-gradient(135deg, #272220 33.33%, transparent 33.33%) 0 0%, #272220 -o-linear-gradient(45deg, #272220 33.33%, #2B3A48 33.33%) 0 0%;
+//     background: -moz-linear-gradient(#2B3A48 0%, transparent 0%), -moz-linear-gradient(135deg, #272220 33.33%, transparent 33.33%) 0 0%, #272220 -moz-linear-gradient(45deg, #272220 33.33%, #2B3A48 33.33%) 0 0%;
+//     background-repeat: repeat-x;
+//     background-size: 0px 100%, 9px 27px, 9px 27px;
+//   }
+
+// .box:after {
+//     content: "";
+//     display: block;
+//     position: relative;
+//     top: 0;
+//     left: 0;
+//     width: 200px;
+//     height: 200px;
+//     background: linear-gradient(#2B3A48 0%, transparent 0%), linear-gradient(135deg, #272220 33.33%, transparent 33.33%) 0 0%, #272220 linear-gradient(45deg, #272220 33.33%, #2B3A48 33.33%) 0 0%;
+//     background: -webkit-linear-gradient(#2B3A48 0%, transparent 0%), -webkit-linear-gradient(135deg, #272220 33.33%, transparent 33.33%) 0 0%, #272220 -webkit-linear-gradient(45deg, #272220 33.33%, #2B3A48 33.33%) 0 0%;
+//     background: -o-linear-gradient(#2B3A48 0%, transparent 0%), -o-linear-gradient(135deg, #272220 33.33%, transparent 33.33%) 0 0%, #272220 -o-linear-gradient(45deg, #272220 33.33%, #2B3A48 33.33%) 0 0%;
+//     background: -moz-linear-gradient(#2B3A48 0%, transparent 0%), -moz-linear-gradient(135deg, #272220 33.33%, transparent 33.33%) 0 0%, #272220 -moz-linear-gradient(45deg, #272220 33.33%, #2B3A48 33.33%) 0 0%;
+//     background-repeat: repeat-x;
+//     background-size: 0px 100%, 9px 27px, 9px 27px;
+//   }

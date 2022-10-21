@@ -5,8 +5,8 @@ import SearchBox from '../SearchBox/SearchBox'
 import './Navbar.scss'
 
 const Navbar = (props) => {
-    const { searchTerm, handleInput, filtersArr, toggleCheckedFilter } = props;
-console.log(filtersArr);
+    const { searchTerm, handleInput, filtersArr, toggleChecked } = props;
+console.log("filtersArr=",filtersArr);
 
     return (
 
@@ -15,7 +15,7 @@ console.log(filtersArr);
                 searchTerm={searchTerm}
                 handleInput={handleInput}
             />
-            <FiltersList filtersArr={filtersArr} onChange={toggleCheckedFilter}/>
+            <FiltersList filtersArr={filtersArr} toggleChecked={toggleChecked}/>
         </div>
 
     )

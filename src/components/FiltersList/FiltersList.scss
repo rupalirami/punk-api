@@ -5,4 +5,20 @@
     flex-direction: column;
     align-items: flex-start;
     margin-left: 25px;
+    // color: $color_floralwhite;
+    color: $color-primary;
+    font-size: 15px;;
+    font-weight: 700;
+    padding-bottom: 190%;
+
+    @media screen and (max-width: 500px) {
+        display: flex;
+        flex-direction: row;
+        width: 80vw;
+        margin: 5px;
+        padding: 5px;
+        font-size: 15px;
+        // align-items: flex-start;
+        // height: auto;
+    }
 }

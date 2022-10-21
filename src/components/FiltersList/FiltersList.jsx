@@ -3,17 +3,18 @@ import Filter from '../Filter/Filter';
 import './FiltersList.scss'
 
 const FiltersList = (props) => {
-    const { filtersArr, toggleCheckedFilter } = props;
+    const { filtersArr, toggleChecked } = props;
 
     const filtersJSX = filtersArr.map((filter) => (
         <Filter
+            key={filter.id}
             label={filter.text}
             value={filter.checked}
-            onChange={toggleCheckedFilter}
-            key={filter.id}
+            toggleChecked={toggleChecked}
+            filterId={filter.id}
         />
     ));
-    console.log(filtersJSX)
+    console.log("filtersjsx=",filtersJSX);
     return (
         <div className="filter-list">{filtersJSX}</div>
     );

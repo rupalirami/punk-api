@@ -1,11 +1,19 @@
 .beer-list {
-  width: 75%;
+  width: 70%;
   height: 90%;
   gap: 15px;
-  margin: 15px;
+  margin: 5px;
   flex: 1;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
   grid-template-rows: auto;
   overflow-x: auto;
+}
+@media screen and (max-width: 500px) {
+  .beer-list {
+    margin: 0 15px 0 15px;
+    padding-top: 5px;
+    width: 90vw;
+    height: auto;
+  }
 }/*# sourceMappingURL=CardList.css.map */

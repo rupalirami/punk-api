@@ -5,11 +5,26 @@
     width: 25%;
     height: 81vh;
     margin: 15px;
-    border: 2px solid $color-black;
+    // border: 2px solid $color-black;
+    // background-color: rgb(230,230,230);
+    background-color: $color-background;
+    background-image: url("../../assets/images/jonas-jacobsson-p2KA3Q2lfSw-unsplash.jpg");
+    // background-size: contain;
+    // background-size: cover;
+    // transform: rotate(30deg);
 
-    // .Checkbox {
-    //     display: flex;
-    //     flex-direction: column;
-    // }
+    border-radius: 15px;
+
+
+    @media screen and (max-width: 500px) {
+        display: flex;
+        flex-direction: column;
+        border-radius: 15px;
+        margin: 0 15px 15px 20px;
+        padding-top: 15px;
+        height: 20vh;
+        width: 87vw;
+
+    }
 
 }
