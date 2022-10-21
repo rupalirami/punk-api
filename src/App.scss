@@ -2,13 +2,14 @@
 
 .App {
   text-align: center;
-  // background-image: url("./assets/images/jonas-jacobsson-p2KA3Q2lfSw-unsplash.jpg");
+  background-image: url("./assets/images/jonas-jacobsson-p2KA3Q2lfSw-unsplash.jpg");
   // background-size: contain;
 
   background-color: $color-background;
   h1 {
     font-size: 50px;
     // color: aliceblue; //uncomment for background image
+    color: $color-heading; //uncomment for background image
   }
   p {
     font-size: x-small;

@@ -1,9 +1,11 @@
 .App {
   text-align: center;
+  background-image: url("./assets/images/jonas-jacobsson-p2KA3Q2lfSw-unsplash.jpg");
   background-color: #f6f4eb;
 }
 .App h1 {
   font-size: 50px;
+  color: #b1c6cc;
 }
 .App p {
   font-size: x-small;

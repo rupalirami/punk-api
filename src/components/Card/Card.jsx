@@ -3,7 +3,7 @@ import "./Card.scss";
 
 const Card = (props) => {
     const { beer_image, beer_name, beer_tagline, beer_description, beer_abv, beer_first_brewed, beer_ph} = props;
-    const shortendDescr = beer_description.length <= 200 ? beer_description : beer_description.substring(0,(beer_description.indexOf(".",200)+1))+"..."
+    const shortendDescr = beer_description.length <= 200 ? beer_description : beer_description.substring(0,(beer_description.indexOf(".",200)+1))+".."
 
   return (
     <div className='beer-details'>

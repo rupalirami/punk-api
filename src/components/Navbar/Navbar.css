@@ -4,6 +4,7 @@
   height: 81vh;
   margin: 15px;
   background-color: #f6f4eb;
+  background-image: url("../../assets/images/jonas-jacobsson-p2KA3Q2lfSw-unsplash.jpg");
   border-radius: 15px;
 }
 @media screen and (max-width: 500px) {

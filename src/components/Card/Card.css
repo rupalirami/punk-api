@@ -15,6 +15,7 @@
 .beer-details .beer-description {
   font-size: 15px;
   color: #3c096c;
+  text-align: center;
   font-weight: 450;
   min-height: 30%;
   padding-bottom: 20px;

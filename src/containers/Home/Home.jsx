@@ -38,6 +38,8 @@ const Home = () => {
   //   // clean or set data here
   //   setBeers(data.results);
   // }
+
+
   const getBeers = async () => { // in this function add async before parenthesis
     fetch (url)
     .then((response) => response.json())
