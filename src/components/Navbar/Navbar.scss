@@ -2,28 +2,36 @@
 
 .Navbar {
     text-align: center;
-    width: 25%;
+    width: 21%;
     height: 81vh;
     margin: 15px;
     // border: 2px solid $color-black;
     // background-color: rgb(230,230,230);
-    background-color: $color-background; // comment for background image
+    // background-color: $color-background; // comment for background image
 
     background-image: url("../../assets/images/jonas-jacobsson-p2KA3Q2lfSw-unsplash.jpg"); //uncomment for bkground image
     // background-size: cover;
 
     border-radius: 15px;
-
+    p {
+        position: absolute;
+        top: 10px;
+        font-size: x-small;
+        // color: $color-floralwhite;
+        color: $color-credits;
+        text-align: right;
+        padding-right: 5px;
+    }
 
     @media screen and (max-width: 500px) {
         display: flex;
         flex-direction: column;
+        // background-color: $color-background; 
         border-radius: 15px;
         margin: 0 15px 15px 20px;
         padding-top: 15px;
         height: 20vh;
         width: 87vw;
-
     }
 
 }

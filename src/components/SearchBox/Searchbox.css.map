@@ -1,1 +1,1 @@
-{"version":3,"sources":["SearchBox.scss","../../assets/sass/_variables.scss","SearchBox.css"],"names":[],"mappings":"AAEA;EACI,YAAA;EACA,UAAA;EACA,YAAA;EACA,yBAAA;EACA,cCDY;EDEZ,kBAAA;AEDJ;AFEI;EAPJ;IAQQ,SAAA;IACA,gBAAA;IACA,WAAA;IACA,YAAA;EECN;AACF","file":"SearchBox.css"}
+{"version":3,"sources":["SearchBox.scss","../../assets/sass/_variables.scss","SearchBox.css"],"names":[],"mappings":"AAEA;EACI,2BAAA;EACA,UAAA;EACA,YAAA;EACA,yBAAA;EACA,cCEY;EDDZ,kBAAA;AEDJ;AFEI;EAPJ;IAQQ,SAAA;IACA,gBAAA;IACA,WAAA;IACA,YAAA;EECN;AACF","file":"SearchBox.css"}

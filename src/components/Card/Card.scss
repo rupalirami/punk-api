@@ -9,56 +9,143 @@
     // box-shadow: 0px 0px 17px rgba($color-black, 0.25);
     // background-image: url("../../assets/images/jonas-jacobsson-p2KA3Q2lfSw-unsplash.jpg");
     border-radius: 20px;
-    box-shadow: 10px 10px 20px rgba($color-black, 0.25);
-    background-color: $color-background;
+    box-shadow: 15px 10px 20px rgba($color-blue12, 0.35);
+    // background-color: $color-background;
+    background-color: $color-bg;
     margin:10px;
     padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+    .beer-other-details{
+        height: 150px;
+    }
     .beer-name {
         font-size: 20px;
-        margin: 0 0 15px 0;
+        // margin: 0 0 15px 0;
         color: $color_primary;
     }
-    .beer-description {
-        font-size: 15px;
-        color: $color_secondary;
-        text-align: center;
-        font-weight: 450;
-        min-height: 30%;
-        padding-bottom: 20px;
-    }
     .beer-image {
-        display: absolute;
+        // display: absolute;
         width: auto;
         height: 150px;
         margin: 10px;
         flex: auto;
         flex-shrink: 0;
         border-radius: 15px;
-        box-shadow: 0px 0px 17px rgba($color-black, 0.25);
+        // box-shadow: 0px 0px 17px rgba($color-black, 0.25);
         // background-color: hsl(0, 0%, 81%);
-        background-color: $color-imagebackground;
+        // background-color: $color-imagebackground;
+        background-color: $color-imagebg;
+    }
+    .beer-tagline {
+        margin-bottom: 15px;
+        color: $color_secondary;
+        justify-content: center;
     }
     .beer-filters {
+        width: 200px;
+        margin: auto;
+    }
+    .beer-filters-title {
         display: flex;
-        margin: 0px;
-        width: 100%;
-        justify-content: center;
+        // flex-direction: column;
+        flex-direction: row;
+        margin: auto;
+        // margin-left: 5px;
+        padding: 3px;
+        width: 150px;
+        align-items: center;
+        justify-content: space-between;
         color: $color-primary;
-        font-weight: 440;
+        font-weight: 550;
         font-size: 12px;
+    }
+    .beer-filters-value {
+        display: flex;
+        // flex-direction: column;
+        flex-direction: row;
+        margin: 0px;
+        padding: 5px;
+        width: 95%;
+        align-items: center;
+        justify-content: space-between;
+        color: $color-primary;
+    }
+    // .beer-abv-value {
+    //     margin-right: 7px;
+    // }
+    .value {
+        border: 1px solid $color-primary;
+        font-size: 10px;
+        width: 25px;
+        height: 21px;
+        border-radius: 50%;
+        margin: auto;
+        padding: 5px 2px 0px 1px;
+        align-content: space-around;
+    }
+    // .beer-first-brewed {
+    //     padding-right: 5px;
+    // }
 
-        .beer-abv {
-            padding-right:5px;
-        }
-        .beer-first-brewed {
-            padding-right: 5px;
-        }
+    &__content {
+        width: 20%;
+        position: absolute;
+        left: 0px;
+        top: 85px;
+    }
+    &__cross {
+        height: 15px;
+        width: 15px;
+        position: absolute;
+        right: 20px;
+        top: 15px;
+    }
+    &__button {
+        margin: 0 0 5px 0;
+    }
+    .button {
+        // color: $color_primary;
+        margin-bottom: 5px;
+        color: $color_floralwhite;
+        background-color: $color-blue1;
+        box-shadow: 5px 10px 15px rgba($color-blue1,1);
+    }
+    .beer-description {
+        font-size: 15px;
+        color: $color_secondary;
+        text-align: center;
+        font-weight: 450;
+        // min-height: 30%;
+        padding-bottom: 0px;
+    }
+    .beer-subheading {
+        font-size: 15px;
+        margin-top: 3px;
+        margin-bottom: 3px;
+    }
+    .beer-food-pairing {
+        font-size: 15px;
+        color: $color_primary;;
+        text-align: center;
+        padding-bottom: 5px;
+    }
+    .beer-brewers-tips {
+        font-size: 15px;
+        color: $color_secondary;
+        text-align: center;
     }
     @media screen and (max-width: 500px) {
         margin: 10px;
         padding-top: 10px;
         width: 80vw;
         height: auto;
+        &__content {
+            width: 90%;
+            position: absolute;
+            left: 0px;
+            top: 50px;
+        }
     }
 }
 

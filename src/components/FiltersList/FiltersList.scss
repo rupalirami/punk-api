@@ -4,12 +4,12 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin-left: 25px;
+    margin-left: 20px;
     // color: $color_floralwhite; //comment for background image
     color: $color-primary; //uncomment for no background image
     font-size: 15px;;
-    font-weight: 700;
-    padding-bottom: 190%;
+    font-weight: 600;
+    padding-bottom: 150%;
 
     @media screen and (max-width: 500px) {
         display: flex;

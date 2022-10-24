@@ -2,14 +2,70 @@
 
 .App {
   text-align: center;
+  height: 100%;
   background-image: url("./assets/images/jonas-jacobsson-p2KA3Q2lfSw-unsplash.jpg");
   // background-size: contain;
 
   background-color: $color-background;
-  h1 {
-    font-size: 50px;
+  .heading {
+    font-size: 70px;
     // color: aliceblue; //uncomment for background image
     color: $color-heading; //uncomment for background image
+    animation: animate .85s infinite;
+  }
+  .des:nth-child(1){
+    animation-delay: 0.1s;
+  }.des:nth-child(2){
+    animation-delay: 0.3s;
+  }.des:nth-child(3){
+    animation-delay: 0.5s;
+  }.des:nth-child(4){
+    animation-delay: 0.7s;
+  }.des:nth-child(5){
+    animation-delay: 0.9s;
+  }.des:nth-child(6){
+    animation-delay: 0.11s;
+  }.des:nth-child(7){
+    animation-delay: 0.13s;
+  }.des:nth-child(7){
+    animation-delay: 0.15s;
+  }.des:nth-child(7){
+    animation-delay: 0.17s;
+  }.des:nth-child(7){
+    animation-delay: 0.19s;
+  }.des:nth-child(7){
+    animation-delay: 0.21s;
+  }.des:nth-child(7){
+    animation-delay: 0.23s;
+  }.des:nth-child(7){
+    animation-delay: 0.14s;
+  }.des:nth-child(7){
+    animation-delay: 0.15s;
+  }.des:nth-child(7){
+    animation-delay: 0.16s;
+  }
+  @keyframes animate {
+    0% {
+      color: $color-blue1;
+    }
+    10% {
+      color: $color-blue3;
+    }
+    20% {
+      color: $color-blue5;
+    }
+    40% {
+      color: $color-blue8;
+    }
+    60% {
+      color: $color-blue11;
+    }
+    80% {
+      color: $color-blue13;
+    }
+    100% {
+      color: $color-blue15;
+    }
   }
   p {
     font-size: x-small;
@@ -24,11 +80,16 @@
   // background-repeat: repeat-x;
 
   @media screen and (max-width: 500px) {
-    height: 100vh;
+    height: 100%;
+    background-image: url("./assets/images/jonas-jacobsson-p2KA3Q2lfSw-unsplash.jpg");
+    background-size: contain;
     width: 100%;
     h1 {
       margin-top: 0px;
       padding-top: 5px;
+    }
+    .heading {
+      font-size: 30px;
     }
   }
 

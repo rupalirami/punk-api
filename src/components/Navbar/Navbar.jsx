@@ -1,5 +1,4 @@
 import React from 'react'
-import { useState } from "react";
 import FiltersList from '../FiltersList/FiltersList';
 import SearchBox from '../SearchBox/SearchBox'
 import './Navbar.scss'
@@ -16,6 +15,7 @@ const Navbar = (props) => {
                 handleInput={handleInput}
             />
             <FiltersList filtersArr={filtersArr} toggleChecked={toggleChecked}/>
+            <p>©Photo by Jonas Jacobsson on Unsplash</p>
         </div>
 
     )

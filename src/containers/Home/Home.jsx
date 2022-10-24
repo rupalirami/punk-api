@@ -50,9 +50,8 @@ const Home = () => {
   // uncomment when getBeers work
   const updatedBeers = beers.filter((beer) => {
     const beerNameLower = beer.name.toLowerCase();
-
-    console.log("first brewed",beer.first_brewed.substring(3,7));
-    console.log(beer.description.length)
+    // console.log("first brewed",beer.first_brewed.substring(3,7));
+    // console.log(beer.description.length)
     // console.log(beer.description.substring(0,(beer.description.indexOf(".",200)+1))+"...");
 
     return beerNameLower.includes(searchTerm)
@@ -63,8 +62,8 @@ const Home = () => {
 
   // console.log("NewFiltersArr=")
   // console.log(filtersArr);
-  console.log("UpdatedBeers=",updatedBeers);
-  console.log("updatedbeers[0]=",updatedBeers[0]);
+  // console.log("UpdatedBeers=",updatedBeers);
+  // console.log("updatedbeers[0]=",updatedBeers[0]);
 
   return (
     <div className="Homepage">
