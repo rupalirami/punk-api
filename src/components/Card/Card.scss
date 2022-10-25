@@ -136,15 +136,15 @@
         text-align: center;
     }
     @media screen and (max-width: 500px) {
-        margin: 10px;
+        margin: auto;
         padding-top: 10px;
         width: 80vw;
         height: auto;
         &__content {
-            width: 90%;
+            width: 95%;
             position: absolute;
             left: 0px;
-            top: 50px;
+            top: 55px;
         }
     }
 }

@@ -1,8 +1,27 @@
+import { useState } from "react";
+import leftArrow from "../../assets/images/left-arrow.png"
+import rightArrow from "../../assets/images/right-arrow.png"
 import Card from "../Card/Card";
 import "./CardList.scss";
 
 const CardList = (props) => {
   const { beersArr } = props;
+  const [counter, setCounter] = useState(0);
+  const handleIncrement = () => {
+    if (counter === beersArr.length - 1) {
+      setCounter(0);
+    } else {
+      setCounter(counter + 1);
+    }
+  }
+  const handleDecrement = () => {
+    if (counter === 0) {
+      setCounter(beersArr.length - 1);
+    } else {
+      setCounter(counter - 1);
+    }
+  }
+
   const beerJSX = beersArr.map((beer) => (
     <Card
       key={beer.id}

@@ -11,7 +11,8 @@
     font-size: 70px;
     // color: aliceblue; //uncomment for background image
     color: $color-heading; //uncomment for background image
-    animation: animate .85s infinite;
+    // animation: animate .85s infinite;
+    animation: animate .64s infinite;
   }
   .des:nth-child(1){
     animation-delay: 0.1s;
@@ -85,7 +86,7 @@
     background-size: contain;
     width: 100%;
     h1 {
-      margin-top: 0px;
+      margin-top: 5px;
       padding-top: 5px;
     }
     .heading {

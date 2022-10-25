@@ -24,7 +24,7 @@ const Home = () => {
   };
   // console.log("beers[1]=",beers[1]);
   // const url = "https://api.punkapi.com/v2/beers/1";
-  const url = "https://api.punkapi.com/v2/beers/";
+  const url = "https://api.punkapi.com/v2/beers?per_page=80";
 
   useEffect(() => {
     getBeers();
