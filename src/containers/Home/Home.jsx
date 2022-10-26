@@ -50,14 +50,18 @@ const Home = () => {
   // uncomment when getBeers work
   const updatedBeers = beers.filter((beer) => {
     const beerNameLower = beer.name.toLowerCase();
+    if (beer.name === "AB:06") {
+      console.log("beer ph",beer.ph);
+    }
+
     // console.log("first brewed",beer.first_brewed.substring(3,7));
     // console.log(beer.description.length)
     // console.log(beer.description.substring(0,(beer.description.indexOf(".",200)+1))+"...");
 
     return beerNameLower.includes(searchTerm)
     && (filtersArr[0].checked ? beer.abv > 6: true )
-    && (filtersArr[1].checked ? beer.first_brewed.substring(3,7) < 2010: true )
-    && (filtersArr[2].checked ? beer.ph < 4: true );
+    && (filtersArr[1].checked ? beer.ph < 4 && beer.ph != null: true )
+    && (filtersArr[2].checked ? beer.first_brewed.substring(3,7) < 2010: true );
   });
 
   // console.log("NewFiltersArr=")
